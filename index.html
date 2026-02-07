@@ -4,174 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Still — Hardware Stillness</title>
+    <title>Still — Calm, without addiction.</title>
     <meta name="description"
-        content="Still merges high-fidelity atmospheres with your iOS hardware. Experience peace through Dynamic Island and Lock Screen integration.">
+        content="Still is a mindfulness app for people who hate mindfulness apps. No streaks, no scores, no tracking. Just quiet.">
 
     <!-- Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <nav class="glass">
+    <div class="hero-bg">
+        <img src="assets/hero-bg.png" alt="Atmospheric background">
+    </div>
+
+    <nav>
         <div class="logo">Still</div>
         <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#hardware">Hardware</a>
-            <a href="#patronage">Still+</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#patronage">Patronage</a>
             <a href="privacy.html">Privacy</a>
         </div>
     </nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-bg">
-                <img src="assets/hero-bg.png" alt="Serene Background">
-            </div>
+        <section class="hero gallery-container">
             <div class="hero-content">
-                <span class="section-label">A v1.1.0 Update</span>
-                <h1>Hardware-Optimized <span>Peace.</span></h1>
-                <p>Experience atmospheres that flow with your life. Still integrates deeply with your Dynamic Island and
-                    Lock Screen.</p>
-                <div class="hero-actions">
-                    <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn btn-primary"
-                        target="_blank">
-                        <svg class="app-store-svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-                        </svg>
-                        Download for iPhone
-                    </a>
+                <h1>Calm,<br>without addiction.</h1>
+                <p class="hero-subtext">Still is a mindfulness app for people who hate mindfulness apps. There are no
+                    streaks, no scores, and no endless sessions.</p>
+                <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn" target="_blank">
+                    Download on the App Store
+                </a>
+            </div>
+        </section>
+
+        <!-- Principles Section -->
+        <section id="philosophy" class="gallery-container principles">
+            <div class="principle-item reveal">
+                <h2>Anti-Binge Design</h2>
+                <p>Every session is followed by a mandatory cooldown to ensure your calm is intentional, not habitual.
+                </p>
+            </div>
+
+            <div class="principle-item reveal" style="align-self: flex-end; text-align: right;">
+                <h2>No Metrics</h2>
+                <p>We believe peace cannot be measured—so there are no streaks to keep and no accounts to manage.</p>
+            </div>
+
+            <div class="principle-item reveal">
+                <h2>Session-First UI</h2>
+                <p>The interface disappears when you begin, leaving only the atmosphere and your focus.</p>
+            </div>
+
+            <div class="principle-item reveal" style="align-self: flex-end; text-align: right;">
+                <h2>Daily Atmosphere</h2>
+                <p>Everyone in the world experiences the same deterministic soundscape, shared in quiet synchronicity.
+                </p>
+            </div>
+        </section>
+
+        <!-- Visual Showcase -->
+        <section class="gallery-container visual-showcase reveal">
+            <img src="assets/mockup.png" alt="Still app on hardware">
+        </section>
+
+        <!-- Social Proof -->
+        <section class="gallery-container quotes reveal">
+            <div class="quote">
+                “This app doesn’t want my attention — and that’s why I trust it.”
+            </div>
+        </section>
+
+        <!-- Tech Footnote -->
+        <section class="gallery-container tech-footnote reveal">
+            <h2>Craftsmanship</h2>
+            <div class="tech-grid">
+                <div>
+                    <h4>Audio</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">High-fidelity nature loops processed for
+                        sample-accurate playback.</p>
+                </div>
+                <div>
+                    <h4>Visuals</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Metal-accelerated procedural drawing for
+                        living, breathing atmospheres.</p>
+                </div>
+                <div>
+                    <h4>Hardware</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Deep integration with Dynamic Island and
+                        system Now Playing controls.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Hardware Showcase -->
-        <section id="hardware" class="showcase">
-            <div class="showcase-visual">
-                <img src="assets/mockup.png" alt="iPhone Mockup showing Dynamic Island integration">
-            </div>
-            <div class="showcase-content">
-                <span class="section-label">Integration</span>
-                <h2>Still flows through your phone.</h2>
-                <p>Our unified Play/Pause philosophy ensures that your focus isn't interrupted by checking your
-                    notifications. Control your session directly from the Dynamic Island or your Lock Screen.</p>
-                <div class="hardware-features">
-                    <div style="margin-bottom: 32px;">
-                        <h4 style="color: var(--accent); margin-bottom: 8px;">Dynamic Island</h4>
-                        <p style="font-size: 14px;">Live waveform feedback and instant control without leaving your
-                            workflow.</p>
-                    </div>
-                    <div>
-                        <h4 style="color: var(--accent); margin-bottom: 8px;">Lock Screen Plus</h4>
-                        <p style="font-size: 14px;">Deep integration with Now Playing metadata for a seamless ambient
-                            experience.</p>
-                    </div>
-                </div>
+        <!-- Patronage (Brief & Quiet) -->
+        <section id="patronage" class="gallery-container reveal" style="padding: 120px 0; text-align: center;">
+            <p
+                style="color: var(--text-muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.2rem; margin-bottom: 32px;">
+                Still+ Optional Patronage</p>
+            <p style="max-width: 500px; margin: 0 auto 48px; color: var(--text-secondary);">Unlock manual scene
+                selection and custom durations. Support independent software developed without tracking or venture
+                capital.</p>
+            <div style="display: flex; justify-content: center; gap: 48px; color: var(--accent);">
+                <span>$0.99 monthly</span>
+                <span>/</span>
+                <span>$4.99 yearly</span>
+                <span>/</span>
+                <span>$9.99 lifetime</span>
             </div>
         </section>
 
-        <!-- Features Grid -->
-        <section id="features">
-            <span class="section-label">Core Features</span>
-            <div class="features-grid">
-                <div class="feature-card glass">
-                    <span class="feature-icon">🌊</span>
-                    <h3>19+ Atmospheres</h3>
-                    <p>From ocean waves to high-fidelity Arctic blizzards. Every scene is a procedural sanctuary for
-                        your mind.</p>
-                </div>
-                <div class="feature-card glass">
-                    <span class="feature-icon">🫁</span>
-                    <h3>Flexible Sessions</h3>
-                    <p>Choose 1, 5, or 20 minutes for free. Or go beyond with custom durations up to 120 minutes with
-                        Still+.</p>
-                </div>
-                <div class="feature-card glass">
-                    <span class="feature-icon">🛡️</span>
-                    <h3>Anti-Binge Engine</h3>
-                    <p>We believe in quality over quantity. Every session is followed by a mandatory cooldown to
-                        preserve your peace.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Still+ Patronage -->
-        <section id="patronage" class="patronage">
-            <div class="patron-card glass">
-                <div class="patron-badge">STILL+ PATRONAGE</div>
-                <h2>Support Independent Peace.</h2>
-                <p>Becoming a patron unlocks the complete archive and deeper immersion features.</p>
-
-                <div class="patron-options">
-                    <div class="option">
-                        <h4>$0.99</h4>
-                        <span>MONTHLY</span>
-                    </div>
-                    <div class="option">
-                        <h4>$4.99</h4>
-                        <span>YEARLY</span>
-                    </div>
-                    <div class="option">
-                        <h4>$9.99</h4>
-                        <span>LIFETIME</span>
-                    </div>
-                </div>
-
-                <div class="patron-list" style="text-align: left; max-width: 400px; margin: 0 auto;">
-                    <ul
-                        style="list-style: none; display: grid; gap: 12px; font-size: 14px; color: var(--text-secondary);">
-                        <li>✨ Manual Scene Selection from Archive</li>
-                        <li>⏳ Custom Session Durations (5m - 120m)</li>
-                        <li>😴 Immersive Sleep Mode Visual Fades</li>
-                        <li>❤️ Exclusive High-Fidelity Partner Scenes</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="philosophy" style="text-align: center;">
-            <h2>Calm through restraint.</h2>
-            <p>No streaks. No points. No social scores. Just a quiet space that's always here. Return for peace, not
-                points.</p>
+        <!-- Closing -->
+        <section class="gallery-container closing reveal">
+            <h2>Still ends. You don’t scroll. You go back to your life.</h2>
+            <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn" target="_blank"
+                style="opacity: 0.6;">
+                Begin
+            </a>
         </section>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
-            <a href="https://github.com/deepak-kumar/still-app/issues">Support</a>
+        <div class="gallery-container" style="padding-bottom: 80px; text-align: center;">
+            <div style="margin-bottom: 24px;">
+                <a href="privacy.html"
+                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Privacy</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Terms</a>
+                <a href="https://github.com/deepak-kumar/still-app/issues"
+                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Support</a>
+            </div>
+            <div class="copyright" style="color: var(--text-muted); font-size: 11px;">
+                © 2026 Still. Made with calm by Deepak Kumar.
+            </div>
         </div>
-        <div class="copyright">© 2026 Still. Made with calm by Deepak Kumar.</div>
     </footer>
 
     <script>
-        // Reveal on scroll logic
-        const observerOptions = {
-            threshold: 0.1
-        };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = "1";
-                    entry.target.style.transform = "translateY(0)";
+                    entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = "0";
-            section.style.transform = "translateY(40px)";
-            section.style.transition = "all 0.8s cubic-bezier(0.23, 1, 0.32, 1)";
-            observer.observe(section);
-        });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
 
