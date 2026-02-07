@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deepak-kumar.github.io/still-app/sitemap.xml
