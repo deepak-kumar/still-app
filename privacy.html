@@ -8,80 +8,29 @@
     <meta name="description" content="Still's privacy policy. We believe your peace should be private.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <style>
-        :root {
-            --bg-dark: #0a0a0f;
-            --bg-gradient-start: #0d0d15;
-            --bg-gradient-end: #1a1a2e;
-            --text-primary: rgba(255, 255, 255, 0.95);
-            --text-secondary: rgba(255, 255, 255, 0.6);
-            --text-muted: rgba(255, 255, 255, 0.4);
-            --accent: #f0a060;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            min-height: 100vh;
-            line-height: 1.7;
-        }
-
-        .bg-gradient {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse at 50% 0%, var(--bg-gradient-end) 0%, var(--bg-dark) 70%);
-            z-index: -1;
-        }
-
-        header {
-            padding: 24px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-            color: var(--text-primary);
-            text-decoration: none;
-        }
-
         main {
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 160px 24px 80px;
         }
 
         h1 {
-            font-size: 40px;
-            font-weight: 300;
-            letter-spacing: -1.5px;
+            font-size: 48px;
             margin-bottom: 16px;
+            font-weight: 500;
         }
 
         .last-updated {
             color: var(--text-muted);
             font-size: 14px;
-            margin-bottom: 48px;
+            margin-bottom: 64px;
         }
 
         h2 {
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 24px;
             margin-top: 48px;
             margin-bottom: 16px;
             color: var(--accent);
@@ -89,89 +38,54 @@
 
         p {
             color: var(--text-secondary);
-            margin-bottom: 16px;
-            font-size: 15px;
+            margin-bottom: 24px;
+            font-size: 16px;
         }
 
         ul {
             color: var(--text-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 24px;
             padding-left: 24px;
         }
 
         li {
-            margin-bottom: 8px;
-            font-size: 15px;
+            margin-bottom: 12px;
+            font-size: 16px;
         }
 
         .highlight {
-            background: rgba(240, 160, 96, 0.1);
-            border-left: 3px solid var(--accent);
-            padding: 20px 24px;
-            border-radius: 0 12px 12px 0;
-            margin: 32px 0;
+            background: rgba(240, 160, 96, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 32px;
+            border-radius: 0 16px 16px 0;
+            margin: 48px 0;
         }
 
         .highlight p {
             color: var(--text-primary);
             margin: 0;
-            font-weight: 400;
-        }
-
-        footer {
-            padding: 40px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        footer a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 13px;
-            margin: 0 16px;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: var(--text-secondary);
-        }
-
-        .copyright {
-            color: var(--text-muted);
-            font-size: 12px;
-            margin-top: 24px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 20px 24px;
-            }
-
-            main {
-                padding: 60px 24px;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
+            font-weight: 500;
         }
     </style>
 </head>
 
 <body>
-    <div class="bg-gradient"></div>
-
-    <header>
-        <a href="index.html" class="logo">Still</a>
-    </header>
+    <nav class="glass">
+        <a href="index.html" class="logo" style="text-decoration: none; color: white;">Still</a>
+        <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#patronage">Still+</a>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
 
     <main>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: February 6, 2026</p>
+        <p class="last-updated">Last updated: February 7, 2026</p>
 
         <div class="highlight">
-            <p>Still is built on a simple principle: <strong>your peace should be private.</strong> We don't collect,
-                store, or share any personal data. Period.</p>
+            <p>Still is built on a simple principle: your peace should be private. We don't collect, store, or share any
+                personal data. Period.</p>
         </div>
 
         <h2>What We Collect</h2>
@@ -183,55 +97,42 @@
             Your experience is completely anonymous.</p>
 
         <h2>No Tracking</h2>
-        <p>We do not use:</p>
-        <ul>
-            <li>Analytics services (Google Analytics, Mixpanel, etc.)</li>
-            <li>Crash reporting services</li>
-            <li>Advertising networks</li>
-            <li>Third-party SDKs that collect data</li>
-        </ul>
+        <p>We do not use analytics services, crash reporting, advertising networks, or third-party SDKs that collect
+            data. Your usage remains between you and your device.</p>
 
         <h2>Local Storage & Hardware</h2>
-        <p>Still stores your preferences (like your default scene and breathing mode) locally on your device using
-            standard iOS storage. Any interactions with system features like <strong>Dynamic Island</strong> or
-            <strong>Now Playing</strong> are handled entirely by the iOS operating system and do not involve data
-            collection. This data:</p>
-        <ul>
-            <li>Never leaves your device</li>
-            <li>Is not backed up to our servers (we don't have any)</li>
-            <li>Is deleted when you uninstall the app</li>
-        </ul>
+        <p>Still stores your preferences (like your default scene and breathing mode) locally on your device. Any
+            interactions with system features like <strong>Dynamic Island</strong> or <strong>Now Playing</strong> are
+            handled entirely by the iOS operating system. This data never leaves your device and is deleted when the app
+            is uninstalled.</p>
 
         <h2>In-App Purchases</h2>
-        <p>If you choose to support Still through an in-app purchase (Still+), the transaction is handled entirely by
-            Apple through the App Store. We do not have access to your payment information, Apple ID, or any personal
-            details. Apple's privacy policy governs these transactions.</p>
+        <p>If you choose to support Still through a Still+ patronage, the transaction is handled entirely by Apple
+            through the App Store. We do not have access to your payment information, Apple ID, or any personal details.
+        </p>
 
         <h2>Children's Privacy</h2>
-        <p>Still does not knowingly collect any information from anyone, including children under the age of 13. The app
-            is designed for general audiences and contains no features that would collect personal data.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>If we ever change this policy, we will update the "Last updated" date above. Given our commitment to not
-            collecting data, we don't anticipate significant changes.</p>
+        <p>Still does not knowingly collect any information from anyone, including children. The app is designed for
+            general audiences and contains no features that would collect personal data.</p>
 
         <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, you can reach us at:</p>
-        <p><a href="mailto:deepakkumar222@gmail.com" style="color: var(--accent);">deepakkumar222@gmail.com</a></p>
+        <p>If you have questions about this privacy policy, you can reach us at:<br>
+            <a href="mailto:deepakkumar222@gmail.com"
+                style="color: var(--accent); text-decoration: none;">deepakkumar222@gmail.com</a>
+        </p>
 
-        <div class="highlight">
-            <p>We built Still because we believe technology should serve your wellbeing without surveilling you. Your
-                calm is yours alone.</p>
+        <div class="highlight" style="background: rgba(255, 255, 255, 0.03); border-left-color: var(--text-muted);">
+            <p>We believe technology should serve your wellbeing without surveilling you. Your calm is yours alone.</p>
         </div>
     </main>
 
     <footer>
-        <div>
+        <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
             <a href="https://github.com/deepak-kumar/still-app/issues">Support</a>
         </div>
-        <p class="copyright">© 2026 Still. Made with calm.</p>
+        <div class="copyright">© 2026 Still. Made with calm by Deepak Kumar.</div>
     </footer>
 </body>
 
