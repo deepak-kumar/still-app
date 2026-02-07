@@ -321,6 +321,12 @@ nav {
         gap: 100px;
     }
 
+    .principle-item {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center !important;
+    }
+
     section {
         padding: 100px 24px;
     }
