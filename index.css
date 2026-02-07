@@ -179,10 +179,10 @@ nav {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 100px;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
 }
 
@@ -194,14 +194,16 @@ nav {
 
 .hero-visual {
     opacity: 0;
+    display: flex;
+    justify-content: flex-end;
     animation: revealIn 2s forwards 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .hero-visual img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 40px;
-    box-shadow: 0 60px 120px rgba(0, 0, 0, 0.3);
+    max-width: 340px;
+    border-radius: 32px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
@@ -366,7 +368,7 @@ nav {
     }
 
     .hero-visual img {
-        max-width: 320px;
+        max-width: 280px;
     }
 
     .principles {
