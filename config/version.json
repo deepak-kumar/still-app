@@ -2,7 +2,7 @@
   "min_required_version": "1.2.2",
   "latest_version": "1.2.2",
   "update_url": "itms-apps://itunes.apple.com/app/id6758552233",
-  "maintenance_mode": true,
+  "maintenance_mode": false,
   "alert_title": "Update Available",
   "alert_message": "This update contains a critical security fix for the paywall system."
 }
