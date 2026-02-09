@@ -293,6 +293,12 @@ nav {
     max-width: 600px;
 }
 
+.principle-item.second,
+.principle-item.fourth {
+    align-self: flex-end;
+    text-align: right;
+}
+
 .principle-item h2 {
     font-size: 13px;
     text-transform: uppercase;
@@ -437,6 +443,12 @@ nav {
 
     .principles {
         gap: 80px;
+    }
+
+    .principle-item.second,
+    .principle-item.fourth {
+        align-self: center;
+        text-align: center;
     }
 
     .principle-item p {
