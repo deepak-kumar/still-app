@@ -7,23 +7,23 @@
     <title>Still — Dimensional Stillness</title>
     <meta name="description"
         content="A mindfulness app for people who hate mindfulness apps. Dimensional atmospheres, anti-binge design, and quiet hardware integration.">
-    <link rel="canonical" href="https://deepak-kumar.github.io/still-app/" />
+    <link rel="canonical" href="https://stillapp.buildwithlov.com/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://deepak-kumar.github.io/still-app/">
+    <meta property="og:url" content="https://stillapp.buildwithlov.com/">
     <meta property="og:title" content="Still — Dimensional Stillness">
     <meta property="og:description"
         content="A sanctuary for your attention. Dimensional atmospheres, anti-binge design, and high-fidelity breathing journeys.">
-    <meta property="og:image" content="https://deepak-kumar.github.io/still-app/assets/gallery/calm.png">
+    <meta property="og:image" content="https://stillapp.buildwithlov.com/assets/gallery/calm.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://deepak-kumar.github.io/still-app/">
+    <meta property="twitter:url" content="https://stillapp.buildwithlov.com/">
     <meta property="twitter:title" content="Still — Dimensional Stillness">
     <meta property="twitter:description"
         content="A sanctuary for your attention. Dimensional atmospheres, anti-binge design, and high-fidelity breathing journeys.">
-    <meta property="twitter:image" content="https://deepak-kumar.github.io/still-app/assets/gallery/calm.png">
+    <meta property="twitter:image" content="https://stillapp.buildwithlov.com/assets/gallery/calm.png">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -84,7 +84,13 @@
                     </a>
                 </div>
                 <div class="hero-visual">
-                    <img src="assets/gallery/calm.png" alt="Still app atmosphere showcase">
+                    <div class="phone-mockup">
+                        <div class="screen">
+                            <img src="assets/gallery/Home.png" alt="Still app home" class="active">
+                            <img src="assets/gallery/ActiveSession.png" alt="Still app session">
+                            <img src="assets/gallery/Splsh.png" alt="Still app splash">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,21 +138,18 @@
                 <h3
                     style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 48px;">
                     Craftsmanship</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 64px;">
+                <div class="tech-grid">
                     <div>
-                        <h4 style="font-size: 16px; margin-bottom: 12px;">High-Fidelity Audio</h4>
-                        <p style="font-size: 14px; color: var(--text-body); opacity: 0.8;">Sample-accurate natural loops
-                            processed for a seamless, rhythmic experience.</p>
+                        <h4>High-Fidelity Audio</h4>
+                        <p>Sample-accurate natural loops processed for a seamless, rhythmic experience.</p>
                     </div>
                     <div>
-                        <h4 style="font-size: 16px; margin-bottom: 12px;">Procedural Visuals</h4>
-                        <p style="font-size: 14px; color: var(--text-body); opacity: 0.8;">Metal-accelerated atmospheres
-                            that breathe and evolve in real-time.</p>
+                        <h4>Procedural Visuals</h4>
+                        <p>Metal-accelerated atmospheres that breathe and evolve in real-time.</p>
                     </div>
                     <div>
-                        <h4 style="font-size: 16px; margin-bottom: 12px;">Hardware Stillness</h4>
-                        <p style="font-size: 14px; color: var(--text-body); opacity: 0.8;">Deeply integrated with
-                            Dynamic Island for peace that flows with your life.</p>
+                        <h4>Hardware Stillness</h4>
+                        <p>Deeply integrated with Dynamic Island for peace that flows with your life.</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +164,7 @@
                 <p style="max-width: 500px; margin: 0 auto 48px; color: var(--text-heading); opacity: 0.9;">Unlock
                     manual scene selection and custom durations. Support independent software developed without venture
                     capital.</p>
-                <div style="display: flex; justify-content: center; gap: 48px; color: var(--accent); font-weight: 500;">
+                <div class="patronage-grid">
                     <span>$0.99 monthly</span>
                     <span>/</span>
                     <span>$4.99 yearly</span>
@@ -209,6 +212,18 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Screenshot Slider logic
+        const images = document.querySelectorAll('.phone-mockup .screen img');
+        let currentIdx = 0;
+
+        function cycleImages() {
+            images[currentIdx].classList.remove('active');
+            currentIdx = (currentIdx + 1) % images.length;
+            images[currentIdx].classList.add('active');
+        }
+
+        setInterval(cycleImages, 4000);
     </script>
 </body>
 
