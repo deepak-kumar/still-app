@@ -1,8 +1,8 @@
 {
   "min_required_version": "1.2.2",
-  "latest_version": "1.4.0",
+  "latest_version": "1.5.0",
   "update_url": "itms-apps://itunes.apple.com/app/id6758552233",
   "maintenance_mode": false,
   "alert_title": "A New Breath is Ready",
-  "alert_message": "Version 1.4.0 is here with enhanced audio stability and intelligent playback controls."
+  "alert_message": "Version 1.5.0 is here with enhanced audio stability and intelligent playback controls."
 }
