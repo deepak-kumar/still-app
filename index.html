@@ -52,7 +52,7 @@
     <!-- Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
 </head>
@@ -68,7 +68,7 @@
         <a href="index.html" class="logo">Still</a>
         <div class="nav-links">
             <a href="#philosophy">Philosophy</a>
-            <a href="#patronage">Patronage</a>
+            <a href="#pricing">Pricing</a>
             <a href="privacy.html">Privacy</a>
         </div>
     </nav>
@@ -78,7 +78,8 @@
         <section class="hero">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <h1>Calm,<br>without addiction.</h1>
+                    <span class="hero-eyebrow">Mindfulness, reimagined</span>
+                    <h1>Calm,<br>without <em>addiction.</em></h1>
                     <p class="hero-subtext">Still is a sanctuary for those overwhelmed by engagement loops. No streaks,
                         no scores, no tracking. Just presence.</p>
                     <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn" target="_blank">
@@ -102,6 +103,8 @@
                 </div>
             </div>
         </section>
+
+        <hr class="section-divider">
 
         <!-- Principles Section -->
         <section id="philosophy">
@@ -131,21 +134,23 @@
             </div>
         </section>
 
+        <hr class="section-divider">
+
         <!-- Social Proof (Visual Rest) -->
         <section class="quotes room-rest">
             <div class="gallery-container reveal">
                 <div class="quote">
-                    “This app doesn’t want my attention — and that’s why I trust it.”
+                    &ldquo;This app doesn't want my attention &mdash; and that's why I trust it.&rdquo;
                 </div>
             </div>
         </section>
 
+        <hr class="section-divider">
+
         <!-- Craftsmanship (Tech Grid) -->
         <section>
             <div class="gallery-container reveal">
-                <h3
-                    style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 48px;">
-                    Craftsmanship</h3>
+                <h3 class="section-label">Craftsmanship</h3>
                 <div class="tech-grid">
                     <div>
                         <h4>High-Fidelity Audio</h4>
@@ -163,31 +168,111 @@
             </div>
         </section>
 
-        <!-- Patronage (Visual Rest) -->
-        <section id="patronage" class="room-rest" style="text-align: center;">
+        <hr class="section-divider">
+
+        <!-- Pricing — Free vs Still+ -->
+        <section id="pricing" class="pricing-section room-rest">
             <div class="gallery-container reveal">
-                <p
-                    style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.2rem; margin-bottom: 32px; color: var(--accent);">
-                    Optional Patronage</p>
-                <p style="max-width: 500px; margin: 0 auto 48px; color: var(--text-heading); opacity: 0.9;">Unlock
-                    manual scene selection and custom durations. Support independent software developed without venture
-                    capital.</p>
-                <div class="patronage-grid">
-                    <span>$0.99 monthly</span>
-                    <span>/</span>
-                    <span>$4.99 yearly</span>
-                    <span>/</span>
-                    <span>$9.99 lifetime</span>
+                <div class="pricing-header">
+                    <h2>Choose your stillness</h2>
+                    <p>Still is free to use. Still+ unlocks the complete experience for those who want to go deeper.</p>
                 </div>
+
+                <div class="pricing-grid">
+                    <!-- Free Tier -->
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Free</div>
+                        <div class="pricing-price">$0</div>
+                        <div class="pricing-note">Forever</div>
+                        <ul class="pricing-features">
+                            <li>Daily atmosphere soundscape</li>
+                            <li>1–5 minute sessions</li>
+                            <li>3 free scenes</li>
+                            <li>Breathing guidance</li>
+                            <li>No account required</li>
+                        </ul>
+                    </div>
+
+                    <!-- Still+ Tier -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Still+</div>
+                        <div class="pricing-price">$4.99 <span>/ mo</span></div>
+                        <div class="pricing-note">or $29.99/yr — save 50% · 7-day free trial</div>
+                        <ul class="pricing-features">
+                            <li>Full library — 31+ scenes</li>
+                            <li>Custom durations up to 120 min</li>
+                            <li>Sleep timer</li>
+                            <li>AI-generated soundscapes</li>
+                            <li>Offline mode</li>
+                            <li>Manual scene selection</li>
+                            <li>Support independent software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comparison Table -->
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Free</th>
+                            <th>Still+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daily atmosphere</td>
+                            <td class="check">✦</td>
+                            <td class="check">✦</td>
+                        </tr>
+                        <tr>
+                            <td>Breathing guidance</td>
+                            <td class="check">✦</td>
+                            <td class="check">✦</td>
+                        </tr>
+                        <tr>
+                            <td>Session duration</td>
+                            <td>1–5 min</td>
+                            <td>Up to 120 min</td>
+                        </tr>
+                        <tr>
+                            <td>Scenes</td>
+                            <td>3 free</td>
+                            <td>31+ full library</td>
+                        </tr>
+                        <tr>
+                            <td>Scene selection</td>
+                            <td class="dash">—</td>
+                            <td class="check">✦</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep timer</td>
+                            <td class="dash">—</td>
+                            <td class="check">✦</td>
+                        </tr>
+                        <tr>
+                            <td>AI soundscapes</td>
+                            <td class="dash">—</td>
+                            <td class="check">✦</td>
+                        </tr>
+                        <tr>
+                            <td>Offline mode</td>
+                            <td class="dash">—</td>
+                            <td class="check">✦</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
+
+        <hr class="section-divider">
 
         <!-- Closing -->
         <section class="closing reveal">
             <div class="gallery-container">
-                <h2>Still ends. You don’t scroll. You go back to your life.</h2>
-                <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn" target="_blank"
-                    style="opacity: 0.8;">
+                <h2>Still ends. You don't scroll. You go back to your life.</h2>
+                <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="btn btn-primary"
+                    target="_blank">
                     Begin
                 </a>
             </div>
@@ -195,22 +280,28 @@
     </main>
 
     <footer>
-        <div class="gallery-container" style="padding-bottom: 80px; text-align: center;">
-            <div style="margin-bottom: 32px;">
-                <a href="privacy.html"
-                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Privacy</a>
-                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
-                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Terms</a>
-                <a href="mailto:stillapp.support@buildwithlov.com"
-                    style="color: var(--text-muted); text-decoration: none; margin: 0 20px; font-size: 12px;">Support</a>
+        <div class="footer-inner">
+            <!-- App Store Badge -->
+            <a href="https://apps.apple.com/us/app/still-calm-focus/id6758552233" class="footer-badge" target="_blank"
+                aria-label="Download Still on the App Store">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1717027200"
+                    alt="Download on the App Store">
+            </a>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a>
+                <a href="mailto:stillapp.support@buildwithlov.com">Support</a>
             </div>
-            <div style="color: var(--text-muted); font-size: 11px; font-weight: 300; letter-spacing: 0.05em;">
-                © 2026 STILL. MADE WITH CALM BY DEEPAK KUMAR.
+
+            <div class="footer-copyright">
+                &copy; 2026 Still. Made with calm by Deepak Kumar.
             </div>
         </div>
     </footer>
 
     <script>
+        // Scroll reveal — IntersectionObserver (works everywhere)
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
